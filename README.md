@@ -5,7 +5,7 @@ Code written/copied by going through the excellent Rust introduction book: https
 
 # Learnings
 
-## 1
+## 1 `cargo` 
 
 **Cargo is your friend**
 
@@ -15,6 +15,10 @@ Code written/copied by going through the excellent Rust introduction book: https
 - `cargo run --example [EXAMPLE_NAME]`
 
 
-## 2
+## 2 `/examples`
 
 Example code can be put into `/examples` folder nad build via `cargo run --example [EXAMPLE_NAME]`.
+
+## 3 `Cargo.toml`
+
+`Cargo.toml` file is super cool, its where all meta data goes. 
