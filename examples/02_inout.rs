@@ -13,5 +13,9 @@ fn main(){
     .expect("Failed to read line");
   
   // print 
-  println!("{guess} with nbytes = {nbytes}");
+  println!("guess raw = \"{guess}\" with nbytes = {nbytes}");
+  
+  // remove trailing newline/whitespace
+  let guess_trimmed = guess.as_mut_str().trim_end();
+  println!("guess trimmed = \"{guess_trimmed}\"");
 }

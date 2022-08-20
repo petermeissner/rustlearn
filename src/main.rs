@@ -1,17 +1,20 @@
 use std::io;
+use rand::Rng;
 
-fn main(){
-  
-  // say hello
-  println!("Guess the number!");
-  
-  // get user input
-  println!("Input your guess:");
-  let mut guess: String = String::new();
-  let nbytes = io::stdin()
-    .read_line(&mut guess)
-    .expect("Failed to read line");
-  
-  // print 
-  println!("{guess} with nbytes = {nbytes}");
+fn main() {
+    println!("Guess the number!");
+
+    let secret_number: u8 = rand::thread_rng().gen_range(1..=100);
+
+    println!("The secret number is: {secret_number}");
+
+    println!("Please input your guess.");
+
+    let mut guess: String = String::new();
+
+    io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read line");
+
+    println!("You guessed: {guess}");
 }
