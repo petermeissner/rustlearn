@@ -1,5 +1,19 @@
 {
   "cSpell.words": [
-    "nbytes"
+    "aarch",
+    "autocfg",
+    "bitflags",
+    "chacha",
+    "crossterm",
+    "getrandom",
+    "libc",
+    "msvc",
+    "nbytes",
+    "rustlearn",
+    "scopeguard",
+    "smallvec",
+    "syscall",
+    "wasi",
+    "winapi"
   ]
 }
