@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 rand = { version = "0.8.3"}
-crossterm = { version = "0.25.0" }
+nannou = "0.18.1"
